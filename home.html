@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <button class="header-button">
+            Выйти
+        </button>
+    </header>
+    <h1>A list of users</h1>
+    <div class="block-with-fg">
+        <button id="add-users">Add Users</button>
+        <form id="sort-select-id" class="sort-select-class">
+            <label for="sort-select" class="class-sort-label">Sort:</label>
+            <select name="sort-select" id="select-sort" title="qqq" class="sort-select">
+                <option value="nonetext" id="text-none"></option>
+                <option value="alphabet" class="text-sort">By alphabet</option>
+                <option value="priceAsc" class="text-sort">Low to hight price</option>
+                <option value="priceDesc" class="text-sort">Hight to low price</option>
+            </select>
+        </form>
+    </div>
+    <div id="main-form-users">
+        <form id="main-form" class="main-form">
+            <div class="button-x close-add">X</div>
+            <div class="text-users">Add Users</div>
+            <label for="name">
+                <input id="name" class="main-form-text" type="text" placeholder="name" name="name" required
+                    autocomplete="off">
+            </label>
+            <label for="description">
+                <input id="description" class="main-form-text" type="text" placeholder="description" name="description"
+                    required autocomplete="off">
+            </label>
+            <label for="avatar">
+                <input id="avatar" class="main-form-text" type="text" placeholder="avatar" name="avatar" required
+                    autocomplete="off">
+            </label>
+            <label for="role">
+                <input id="role" class="main-form-text" type="text" placeholder="role" name="role" required
+                    autocomplete="off">
+            </label>
+            <label for="price">
+                <input id="price" class="main-form-text" type="text" placeholder="price" name="price" required
+                    autocomplete="off">
+            </label>
+            <div class="dialog-button button-add">Add</div>
+        </form>
+    </div>
+
+
+    <div id="main-form-edit">
+        <form id="main-edit" class="main-form">
+            <div class="button-x close-edit">X</div>
+            <div class="text-users">Edit Users</div>
+            <label for="name-edit">
+                <input id="name-edit" class="main-form-text" type="text" placeholder="name" name="name-edit" required
+                    autocomplete="off">
+            </label>
+            <label for="description-edit">
+                <input id="description-edit" class="main-form-text" type="text" placeholder="description"
+                    name="description-edit" required autocomplete="off">
+            </label>
+            <label for="avatar-edit">
+                <input id="avatar-edit" class="main-form-text" type="text" placeholder="avatar" name="avatar-edit"
+                    required autocomplete="off">
+            </label>
+            <label for="role-edit">
+                <input id="role-edit" class="main-form-text" type="text" placeholder="role" name="role-edit" required
+                    autocomplete="off">
+            </label>
+            <label for="price-edit">
+                <input id="price-edit" class="main-form-text" type="text" placeholder="price" name="price" required
+                    autocomplete="off">
+            </label>
+            <div class="dialog-button button-save">Save</div>
+        </form>
+    </div>
+    <div id="loader" style="display: none;">
+        <span class="loader"></span>
+    </div>
+    <div class="content" id="users-container">
+        <div class="users-list">
+        </div>
+    </div>
+    <div class="block-advantages">
+        <section class="section-advantages">
+            <div>Why Choose Us?</div>
+        </section>
+    </div>
+
+    <script type="module" src="home.mjs"></script>
+</body>
+
+</html>

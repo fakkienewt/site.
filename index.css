@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: gainsboro;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #A4A6A8;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.main-signin-02 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
+
+
+#main-signin label {
+    padding-bottom: 20px;
+}
+
+.text-signin {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
+    color: #2E2E2D;
+}
+
+
+#under-block {
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-login {
+    height: 45px;
+    width: 90%;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: cursive;
+    background-color: #CBCDD0;
+    color: #2E2E2D;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.block-login {
+    width: 180px;
+    height: 30px;
+    border: 2px solid black;
+    font-size: 12px;
+    font-family: cursive;
+    border-radius: 20px;
+}
+
+.fa-brands {
+    padding: 5px;
+}
+
+.login-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
